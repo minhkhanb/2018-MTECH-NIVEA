@@ -1,0 +1,160 @@
+*
+  outline: none !important
+
+html, body
+  font-family: $font-NnveaFCBRegular
+  font-size: $font-size
+  color: $color-text
+  -webkit-font-smoothing: antialiased
+  background: url(../images/bg.jpg) no-repeat 0 0 / cover
+
+html
+  height: 100%
+  -ms-text-size-adjust: 100%
+  -webkit-text-size-adjust: 100%
+
+a,a:hover,a:focus,a:visited
+  text-decoration: none
+  color: $color-text
+  +transition-all(250ms)
+
+.error
+  color: #f00 !important
+
+ul,ol
+  list-style-type: none
+  padding: 0
+  margin: 0
+
+input:focus,button:focus
+  outline: none
+
+.thumb img
+  object-fit: cover
+  font-family: "object-fit: cover"
+  width: 100%
+  height: 100%
+
+button
+  font-family: $font-EllFuturaBold
+  text-transform: uppercase
+  font-weight: 600
+  color: #222d86
+  background: #51dbfc
+  border-radius: 50px !important
+
+  &:hover
+    background-color: #666
+
+.text
+  font-family: $font-EllFuturaBold
+  color: #fff
+
+.text-1
+  font-size: 1.5rem
+.text-2
+  font-size: 1.75rem
+  text-transform: uppercase
+
+.box
+  margin-top: 1rem
+.input-group
+  border: 1px solid #cad1d5
+  border-radius: 5px
+
+  button
+    border: none
+    background-color: transparent
+    padding: 2px 7px
+
+    &.decrement
+      border-right: 1px solid #cad1d5
+
+    &.increment
+      border-left: 1px solid #cad1d5
+
+    i
+      font-size: 12px
+      color: #666
+
+  input.text-center
+    font-size: 12px
+    width: 30px
+    border: none
+    padding: 0
+    background-color: transparent
+
+
+.icon-trash
+  width: 14px
+  height: 18px
+  background: url(../images/icon-trash.png) no-repeat 0 bottom
+  display: inline-block
+
+.icon-ok
+  width: 11px
+  height: 11px
+  background: url(../images/icon-ok.png) no-repeat 0 0
+  display: block
+  position: absolute
+  left: 10px
+
+/* Select box */
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn),
+.bootstrap-select.btn-group .dropdown-menu li a,
+.bootstrap-select .dropdown-toggle:focus
+  outline: none !important
+
+.bootstrap-select.btn-group .dropdown-toggle .filter-option
+  color: #666
+
+.bootstrap-select.btn-group .dropdown-menu
+  background-color: #ebebeb
+
+.bootstrap-select.btn-group .dropdown-menu li a
+  padding: 3px 10px 3px 30px
+
+/* Modal */
+.modal
+  text-align: center
+  padding: 0!important
+
+.modal:before
+  content: ''
+  display: inline-block
+  height: 100%
+  vertical-align: middle
+  margin-right: -4px
+
+.modal-dialog
+  display: inline-block
+  text-align: left
+  vertical-align: middle
+
+
+.modal-backdrop
+  background: url("../images/backdrop.png") no-repeat 0 0
+
+.modal-content
+  border: 2px solid #653612
+
+  p
+    font-size: 20px
+    text-align: center
+    padding: 20px
+
+button.close
+  position: absolute
+  top: -22px
+  right: -22px
+  opacity: 1
+  font-size: 15px
+  text-shadow: none
+  background-color: #fff
+  width: 25px
+  height: 25px
+  border-radius: 50%
+  border: 2px solid #653612
+
+
+
